@@ -1,0 +1,39 @@
+extends layout.pug
+
+block content
+	div.container
+
+
+
+		// Default form register
+		form.text-center.border.border-light.p-5(method="post", action="/signin")
+			p.h4.mb-4 Sign up
+			.form-row.mb-4
+				.col
+					// First name
+					input#firstname.form-control(type="text", name="firstname" placeholder="firstname", required)
+				.col
+					// Last name
+					input#lastname.form-control(type="text", name="lastname", placeholder="lastname" required)
+			// User Name
+			
+
+			input#username.form-control.mb-4(type="text", name="username" placeholder="User Name", required)
+
+
+			// E-mail
+			
+
+			input#email.form-control.mb-4(type="email", name="email" placeholder="email", required)
+			// Password
+			input#password.form-control(type='password', name='password' placeholder='Password', aria-describedby='defaultRegisterFormPasswordHelpBlock' required)
+			small#defaultRegisterFormPasswordHelpBlock.form-text.text-muted.mb-4
+				| At least 8 characters and 1 digit
+			// Phone number
+			
+			
+			input.btn.btn-info.my-4.btn-block(type="submit", value="Sign Up") 
+		
+			hr
+			
+				

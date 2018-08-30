@@ -1,0 +1,80 @@
+extends layout.pug
+
+block content
+	div.container
+
+		div#error
+
+			
+		//- form.text-center.border.border-light.p-5(method="post", action="/login")
+		form.form.text-center.border.border-light.p-5(method="post", action="/login")
+			p.h4.mb-4 Sign in
+			
+			input#username.form-control.mb-4(type='text', name="username", placeholder='Username')
+			
+			input#password.form-control.mb-4(type='text', name="password", placeholder='Password')
+			.d-flex.justify-content-around
+				div
+				
+					.custom-control.custom-checkbox
+						input#defaultLoginFormRemember.custom-control-input(type='checkbox')
+						label.custom-control-label(for='defaultLoginFormRemember') Remember me
+				div
+					
+					a(href='') Forgot password?
+	
+			//-a.btn.btn-info.btn-block.my-4(href='/login') Sign in
+			input#login.btn.btn-info.btn-block.my-4(type="button" value="Sign in")
+		
+			p
+				| Not a member?
+				a(href="/signin") Register
+		
+			p or sign in with:
+			
+			i.fab.fa-facebook
+			
+			i.fab.fa-twitter
+			
+			i.fab.fa-linkedin
+			
+			i.fab.fa-github
+
+
+			
+
+
+//- extends layout.pug
+
+//- block content
+//- 	section.container
+//- 		h1.header= title
+//- 		if (message)
+//- 			div.error= message
+//- 		article.item
+//- 			form.form(method="post", action="/login")
+//- 				fieldset
+//- 					div
+//- 						input#username(type="text", name="username" placeholder="usuario", required)
+//- 					div
+//- 						input#password(type="password", name="password", placeholder="password" required)
+//- 					div
+//- 						input.button.show(type="submit", value="Loguearse")
+//- 					div
+//- 						a.button.show(href="/signin") Registrarse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width,initial-scale=1")
+		title= title
+		link(rel="stylesheet", href="/MDB/css/bootstrap.min.css")
+		link(rel="stylesheet", href="/MDB/css/style.min.css")
+		link(rel="stylesheet", href="/MDB/css/mdb.min.css")
+		link(rel="stylesheet", href="/css/menu.css")
+		link(href='https://fonts.googleapis.com/css?family=Playball', rel='stylesheet')
+		link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
+
+	body
+		
+	
+		nav.navbar.navbar-dark.red.lighten-1.mb-4
+			
+			a.navbar-brand.font.font-size(href='/') Salvando Vidas
+			
+			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent23', aria-controls='navbarSupportedContent23', aria-expanded='false', aria-label='Toggle navigation')
+				.animated-icon3
+					span
+					span
+					span
+					span
+		
+			#navbarSupportedContent23.collapse.navbar-collapse
+			
+				ul.navbar-nav.mr-auto
+					li.nav-item.active
+						a.nav-link.font(href='/')
+							| Home 
+							span.sr-only (current)
+					li.nav-item
+						a.nav-link.font(href='#') Features
+					li.nav-item
+						a.nav-link.font(href='/login') Login
+		
+
+				
+		
+
+		
+      
+
+	block content
+
+	hr
+
+
+	footer.page-footer.font-small.special-color-dark.pt-4
+		
+		.container
+			
+			ul.list-unstyled.list-inline.text-center
+				li.list-inline-item
+					a.btn-floating.btn-fb.mx-1
+						i.fab.fa-facebook  
+				li.list-inline-item
+					a.btn-floating.btn-tw.mx-1
+						i.fab.fa-twitter  
+				li.list-inline-item
+					a.btn-floating.btn-gplus.mx-1
+						i.fab.fa-google-plus  
+				li.list-inline-item
+					a.btn-floating.btn-li.mx-1
+						i.fab.fa-linkedin  
+				li.list-inline-item
+					a.btn-floating.btn-dribbble.mx-1
+						i.fab.fa-dribbble  
+	
+		.footer-copyright.text-center.py-3
+			| © 2018 Copyright:
+			a(href='#')  Luis Miguel Robles
+	
+
+
+	script(src="/MDB/js/jquery-3.3.1.min.js")
+	script(src="/MDB/js/bootstrap.min.js")
+	script(src="/MDB/js/mdb.min.js")
+	script(src="/js/menu.js")
+	script(src="/js/auth.js")
